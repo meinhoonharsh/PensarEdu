@@ -14,6 +14,7 @@
    <script src="https://kit.fontawesome.com/c5fe5e7547.js" crossorigin="anonymous"></script>
    <!--IcoFont-->
    <link rel="stylesheet" href="icofont/icofont.min.css">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
    <!--Animate on Scroll-->
    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    <!--Animate.CSS-->
@@ -69,16 +70,16 @@
       </div>
 
 
-      <div id="home">
-         <div class="animate__fadeInLeft animate__animated homecontent">
+      <div id="home" class="container-80">
+         <div class="animate__fadeInLeft animate__animated contentcontainer">
             <!-- <h3>Some Random Text</h3> -->
-            <span> COURSES </span>
+            <span class="headingtext"> COURSES </span>
             <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis Lorem ipsum dolor sit amet
                consectetur
                adipisicing elit.</h4>
-            <a href="products.php">Book a Free Class</a>
+            <a class="button" href="products.php">Book a Free Class</a>
          </div>
-         <img src="img/illustration_courses.png" class="animate__fadeInRight animate__animated" alt="Home Illustration">
+         <img src="img/illustration_about.png" class="animate__fadeInRight animate__animated illustration" alt="Home Illustration">
       </div>
 
 
@@ -90,10 +91,9 @@
 
 
 
-      <div id="youtube">
-         <iframe data-aos="zoom-in" width="560" height="315" src="https://www.youtube.com/embed/NdmwsmIaLms" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+      <div id="youtube"> 
+         <img src="img/youtubethumbnail.jpg" onclick="document.getElementById('modal01').style.display='flex'" class="w3-hover-opacity">
+     
       </div>
 
 
@@ -105,50 +105,61 @@
 </map>
 
 
-<div id="course01" class="coursebox">
-   <div data-aos="zoom-in" class="homecontent">
+
+<div id="course01" class="container-80 coursebox">
+   <div data-aos="zoom-in" class="contentcontainer">
       <!-- <h3>Some Random Text</h3> -->
-      <span> COURSES </span>
+      <span class="headingtext"> COURSES </span>
       <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis Lorem ipsum dolor sit amet
          consectetur
          adipisicing elit.</h4>
-      <a href="bookclass.html">Book a Free Class</a>
+      <a href="bookclass.html" class="button">Book a Free Class</a>
    </div>
-   <iframe data-aos="zoom-in" width="560" height="315" src="https://www.youtube.com/embed/NdmwsmIaLms" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen></iframe>
-</div>
-<div id="course02" class="coursebox">
-   <iframe data-aos="zoom-in" width="560" height="315" src="https://www.youtube.com/embed/NdmwsmIaLms" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen></iframe>
-   <div data-aos="zoom-in" class="homecontent">
-      <!-- <h3>Some Random Text</h3> -->
-      <span> COURSES </span>
-      <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis Lorem ipsum dolor sit amet
-         consectetur
-         adipisicing elit.</h4>
-      <a href="bookclass.html">Book a Free Class</a>
-   </div>
-</div>
-<div id="course03" class="coursebox">
-   <div data-aos="zoom-in" class="homecontent">
-      <!-- <h3>Some Random Text</h3> -->
-      <span> COURSES </span>
-      <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis Lorem ipsum dolor sit amet
-         consectetur
-         adipisicing elit.</h4>
-      <a href="bookclass.html">Book a Free Class</a>
-   </div>
-   <iframe data-aos="zoom-in" width="560" height="315" src="https://www.youtube.com/embed/NdmwsmIaLms" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen></iframe>
+   
+    <img class="illustration" src="img/youtubethumbnail.jpg" onclick="document.getElementById('modal01').style.display='flex'" class="w3-hover-opacity">
+     
 </div>
 
 
 
+<div id="course02" class="container-80 coursebox">
+    <img class="illustration" src="img/youtubethumbnail.jpg" onclick="document.getElementById('modal01').style.display='flex'" class="w3-hover-opacity">
+     
+   <div data-aos="zoom-in" class="contentcontainer">
+      <!-- <h3>Some Random Text</h3> -->
+      <span class="headingtext"> COURSES </span>
+      <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis Lorem ipsum dolor sit amet
+         consectetur
+         adipisicing elit.</h4>
+      <a href="bookclass.html" class="button">Book a Free Class</a>
+   </div>
+</div>
+
+<div id="course03" class="container-80 coursebox">
+   <div data-aos="zoom-in" class="contentcontainer">
+      <!-- <h3>Some Random Text</h3> -->
+      <span class="headingtext"> COURSES </span>
+      <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis Lorem ipsum dolor sit amet
+         consectetur
+         adipisicing elit.</h4>
+      <a href="bookclass.html" class="button">Book a Free Class</a>
+   </div>
+   
+    <img class="illustration" src="img/youtubethumbnail.jpg" onclick="document.getElementById('modal01').style.display='flex'" class="w3-hover-opacity">
+     
+</div>
 
 
+
+
+
+
+
+<div id="modal01" class="modal w3-modal w3-animate-zoom" onclick="this.style.display='none'">
+   <iframe data-aos="zoom-in" src="https://www.youtube.com/embed/NdmwsmIaLms" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+</div>
 
 
 

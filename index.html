@@ -25,6 +25,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
       integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
       crossorigin="anonymous" />
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
    <!-- Bootstrap CSS -->
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -69,30 +70,43 @@
       </div>
 
 
-      <div id="home">
-         <div class="animate__fadeInLeft animate__animated homecontent">
-            <!-- <h3>Some Random Text</h3> -->
-            <span> Effective Learning Classes for Kids </span>
-            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis Lorem ipsum dolor sit amet
-               consectetur
-               adipisicing elit.</h4>
-            <a href="products.php">Book a Free Class</a>
+
+      <div id="landingpage">
+         <div class="landingpagecontent">
+            <span></span>
+            <p>INTRODUCING PROGRAMMING GAMES FOR THE NEXT GENERATION</p>
+            <a href="">Start for Free</a>
+            <!-- <div class="owl-carousel-home">
+               <img src="img/illustration_contactus.png" alt="" width="300px">
+            </div> -->
          </div>
-         <img src="img/illustration_home.png" class="animate__fadeInRight animate__animated" alt="Home Illustration">
       </div>
 
 
-      <div id="about">
-         <img data-aos="fade-up-right" src="img/illustration_about.png" class="" alt="about Illustration">
-         <div data-aos="fade-up-left" class="aboutcontent">
+      <div id="home" class="container-80">
+         <div class="animate__fadeInLeft animate__animated contentcontainer">
             <!-- <h3>Some Random Text</h3> -->
-            <span> About Us</span>
+            <span class="headingtext"> Effective Learning Classes for Kids </span>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis Lorem ipsum dolor sit amet
+               consectetur
+               adipisicing elit.</h4>
+            <a class="button" href="bookclass.html">Book a Free Class</a>
+         </div>
+         <img src="img/illustration_home.png" class="animate__fadeInRight animate__animated illustration" alt="Home Illustration">
+      </div>
+
+
+      <div id="about" class="container-80">
+         <img data-aos="fade-up-right" src="img/illustration_about.png" class="illustration" alt="about illustration">
+         <div data-aos="fade-up-left" class="contentcontainer">
+            <!-- <h3>Some Random Text</h3> -->
+            <span class="headingtext"> About Us</span>
             <h4>We are engaged in generating interest among students towards computer science,
             science, technology, engineering and
             mathematics (CS-STEM) through the innovative use of Robotics learning platform and other research based
             hands-on
             learning tools.</h4>
-            <a href="products.php">Book a Free Class</a>
+            <a class="button" href="bookclass.html">Book a Free Class</a>
          </div>
       </div>
 
@@ -143,11 +157,17 @@
 
 
       <div id="youtube">
-         <iframe data-aos="zoom-in" width="560" height="315" src="https://www.youtube.com/embed/NdmwsmIaLms" frameborder="0"
+         <!-- <iframe data-aos="zoom-in" src="https://www.youtube.com/embed/NdmwsmIaLms" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+            allowfullscreen></iframe> -->
+            <img src="img/youtubethumbnail.jpg" onclick="document.getElementById('modal01').style.display='flex'" class="w3-hover-opacity">
       </div>
 
+<div id="modal01" class="modal w3-modal w3-animate-zoom" onclick="this.style.display='none';">
+   <iframe data-aos="zoom-in" src="https://www.youtube.com/embed/NdmwsmIaLms" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+</div>
 
 
 
@@ -224,7 +244,7 @@
 <div class="demo" id="testimonial">
    <div>
       
-         <h3>Why People Love Us</h3>
+         <h3 class="headingtext">Why People Love Us</h3>
       
    </div>
    <div class="container">
@@ -354,9 +374,9 @@
 
 
 
-      <div id="ourteam">
-         <div class="ourteamtop">
-            <span data-aos="zoom-in-up">Our Team</span>
+      <div id="ourteam" class="container-80">
+         <div class="contentcontainer">
+            <span data-aos="zoom-in-up" class="headingtext">Our Team</span>
          </div>
          <div class="ourteambottom">
             <div data-aos="zoom-in-up">
@@ -371,15 +391,15 @@
 
 
 
-      <div id="contactus">
-         <div data-aos="fade-up-left" class="contactuscontent">
+      <div id="contactus" class="container-80">
+         <div data-aos="fade-up-left" class="contentcontainer">
             <!-- <h3>Some Random Text</h3> -->
-            <span> Question?<br>Get in Touch</span>
+            <span class="headingtext"> Question?<br>Get in Touch</span>
             <h4>We'll be happy to help answer any of your questions. Send us an email and we'll get back to you
                shortly..</h4>
-            <a href="contact.html">Contact Us</a>
+            <a class="button" href="contact.html">Contact Us</a>
          </div>
-         <img data-aos="fade-up-right" src="img/illustration_contactus.png" class="" alt="Home Illustration">
+         <img data-aos="fade-up-right" src="img/illustration_contactus.png" class="illustration" alt="Home Illustration">
       </div>
 
 
@@ -510,8 +530,19 @@
    <!-- AOS - Animation On Scroll -->
    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
    <script src="dist/owl.carousel.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
+      integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
+      crossorigin="anonymous"></script>
    <script type="text/javascript">
       AOS.init();
+      var typed = new Typed('.landingpagecontent span', {
+            strings: ["SEntence at first", "Second sentence.", "Third sentence.", "First sentence."],
+            typeSpeed: 100, 
+            backSpeed:50,
+            smartBackspace: true,
+            backDelay:1000,
+            loop:true
+         });
 
       // $('.autoplay').slick({
       //    slidesToShow: 4,
@@ -564,15 +595,27 @@
 
       $(document).ready(function () {
             $("#testimonial-slider").owlCarousel({
-               items: 3,
-               itemsDesktop: [1000, 3],
-               itemsDesktopSmall: [979, 2],
-               itemsTablet: [768, 2],
-               itemsMobile: [650, 1],
-               pagination: true,
-               autoPlay: true
+               autoplay:2000,
+               items: 1, // THIS IS IMPORTANT
+               responsive: {
+                  480: { items: 1 }, // from zero to 480 screen width 4 items
+                  768: { items: 2 }, // from 480 screen widthto 768 6 items
+                  1024: {
+                     items: 3   // from 768 screen width to 1024 8 items
+                  }
+               },
+               pagination: true
             });
          });
+         var owl = $('.owl-carousel-home');
+            owl.owlCarousel({
+               items: 1,
+               // loop: true,
+               // margin: 10,
+               autoplay: true,
+               autoplayTimeout: 1150,
+               // autoplayHoverPause: true
+            });
    </script>
 </body>
 
